@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C0BC2A71E04C6A6000FFA87 /* Tipster in Resources */ = {isa = PBXBuildFile; fileRef = 3C0BC2A61E04C6A6000FFA87 /* Tipster */; };
+		3C0BC2AA1E04C6ED000FFA87 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0BC2A81E04C6ED000FFA87 /* SettingsViewController.swift */; };
 		3C2AF7B11E02060A00714823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2AF7B01E02060A00714823 /* AppDelegate.swift */; };
 		3C2AF7B31E02060A00714823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2AF7B21E02060A00714823 /* ViewController.swift */; };
 		3C2AF7B61E02060A00714823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C2AF7B41E02060A00714823 /* Main.storyboard */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C0BC2A61E04C6A6000FFA87 /* Tipster */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tipster; sourceTree = "<group>"; };
+		3C0BC2A81E04C6ED000FFA87 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3C0BC2AC1E04CF2B000FFA87 /* Tipster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tipster.entitlements; sourceTree = "<group>"; };
 		3C2AF7AD1E02060A00714823 /* Tipster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C2AF7B01E02060A00714823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C2AF7B21E02060A00714823 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +82,7 @@
 		3C2AF7A41E02060A00714823 = {
 			isa = PBXGroup;
 			children = (
+				3C0BC2A61E04C6A6000FFA87 /* Tipster */,
 				3C2AF7AF1E02060A00714823 /* Tipster */,
 				3C2AF7C41E02060A00714823 /* TipsterTests */,
 				3C2AF7CF1E02060A00714823 /* TipsterUITests */,
@@ -97,7 +103,9 @@
 		3C2AF7AF1E02060A00714823 /* Tipster */ = {
 			isa = PBXGroup;
 			children = (
+				3C0BC2AC1E04CF2B000FFA87 /* Tipster.entitlements */,
 				3C2AF7B01E02060A00714823 /* AppDelegate.swift */,
+				3C0BC2A81E04C6ED000FFA87 /* SettingsViewController.swift */,
 				3C2AF7B21E02060A00714823 /* ViewController.swift */,
 				3C2AF7B41E02060A00714823 /* Main.storyboard */,
 				3C2AF7B71E02060A00714823 /* Assets.xcassets */,
@@ -193,7 +201,13 @@
 				TargetAttributes = {
 					3C2AF7AC1E02060A00714823 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 6X8456G82G;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					3C2AF7C01E02060A00714823 = {
 						CreatedOnToolsVersion = 8.2;
@@ -234,6 +248,7 @@
 			files = (
 				3C2AF7BB1E02060A00714823 /* LaunchScreen.storyboard in Resources */,
 				3C2AF7B81E02060A00714823 /* Assets.xcassets in Resources */,
+				3C0BC2A71E04C6A6000FFA87 /* Tipster in Resources */,
 				3C2AF7B61E02060A00714823 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +276,7 @@
 			files = (
 				3C2AF7B31E02060A00714823 /* ViewController.swift in Sources */,
 				3C2AF7B11E02060A00714823 /* AppDelegate.swift in Sources */,
+				3C0BC2AA1E04C6ED000FFA87 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +426,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6X8456G82G;
 				INFOPLIST_FILE = Tipster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DavidH.Tipster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,7 +440,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6X8456G82G;
 				INFOPLIST_FILE = Tipster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DavidH.Tipster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -503,6 +523,7 @@
 				3C2AF7D71E02060A00714823 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C2AF7D81E02060A00714823 /* Build configuration list for PBXNativeTarget "TipsterTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +532,7 @@
 				3C2AF7DA1E02060A00714823 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C2AF7DB1E02060A00714823 /* Build configuration list for PBXNativeTarget "TipsterUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +541,7 @@
 				3C2AF7DD1E02060A00714823 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
