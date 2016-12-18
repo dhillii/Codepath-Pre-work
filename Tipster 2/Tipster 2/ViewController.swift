@@ -61,6 +61,7 @@ class ViewController: UIViewController
         
         CustomTipVal = defaults.double(forKey: "nTipVal")
         
+        
         print(CustomTipVal)
         
         
@@ -69,6 +70,7 @@ class ViewController: UIViewController
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         print("view did appear")
+      
     }
     
     override func viewWillDisappear(_ animated: Bool) {
