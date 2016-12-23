@@ -32,6 +32,8 @@ class ViewController: UIViewController
     
     @IBAction func CalculateTip(_ sender: AnyObject)
     {
+        
+        
         var tipPercentages = [0.05, 0.10, 0.15, 0.20, 0.00]
         
         tipPercentages[4] = CustomTipVal
